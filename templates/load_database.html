@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content%}
+<div>
+    <form action="/load_database", method="POST">
+        <label for="name">Load Database</label>
+        <input type="text" name="filename">
+        <input type="submit" value="Submit">
+    </form>
+</div>
+{% endblock%}
