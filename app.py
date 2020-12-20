@@ -1,7 +1,7 @@
 from neo4j import GraphDatabase
 from flask import Flask, render_template, jsonify, url_for, request, redirect
 
-driver = GraphDatabase.driver(uri='bolt://localhost:7687', auth=('neo4j','1123'))
+driver = GraphDatabase.driver(uri='bolt://localhost:7687', auth=('neo4j','password'))
 session = driver.session()
 
 app = Flask(__name__)
